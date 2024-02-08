@@ -1,0 +1,12 @@
+<%= form_with(model: @content) do |form| %>
+    <%= form.label :name %>:
+    <%= form.text_field :name %>
+    <br>
+    <%= form.label :description %>:
+    <%= form.text_field :description %>
+    <br>
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+    <br>
+    <%= form.submit 'crear blog' %>
+<% end %>
